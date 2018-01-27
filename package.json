@@ -1,0 +1,21 @@
+{
+    "name": "neto-theme-compile",
+    "version": "0.0.1",
+    "description": "Merge your Neto theme files with the latest copy of Skeletal",
+    "main": "index.js",
+    "bin": "./lib/cli.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.1.2",
+        "commander": "^2.13.0",
+        "fs-extra": "^5.0.0",
+        "gulp": "^3.9.1",
+        "gulp-watch": "^5.0.0",
+        "minimatch": "^3.0.4",
+        "simple-git": "^1.89.0"
+    }
+}
