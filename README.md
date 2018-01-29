@@ -1,8 +1,23 @@
 # neto-theme-compile
+![Gulp example](doc/gulp.png)
 
 ## Usage
 
+### `npm install neto-theme-compile`
+
+### Gulp
+In your `gulpfile.js`, simply import and call the `gulpWatchAndCompile()` method like so:
+```javascript
+var gulp = require('gulp');
+var { gulpWatchAndCompile } = require('./index');
+
+gulp.task('default', function() {
+    return gulpWatchAndCompile();
+});
+```
+
 ### API
+You can also use the library programmatically, as seen below:
 ```javascript
 const { NetoThemeCompiler } = require('./index');
 let themeCompiler;
@@ -14,18 +29,5 @@ themeCompiler.init()
     .catch((err) => console.error(err))
 ```
 
-### GULP
-In your `gulpfile.js`:
-```javascript
-var gulp = require('gulp');
-var { gulpWatchAndCompile } = require('./index');
-
-gulp.task('default', function() {
-    return gulpWatchAndCompile();
-});
-```
-
 ### TODO
-- [x] On full compile, don't copy excluded files
 - [ ] Rename the style.css and netothemeinfo.txt correctly
-- [x] Check if master source already exists instead of deleting and cloning every time
