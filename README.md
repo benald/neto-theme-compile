@@ -28,4 +28,4 @@ gulp.task('default', function() {
 ### TODO
 - [x] On full compile, don't copy excluded files
 - [ ] Rename the style.css and netothemeinfo.txt correctly
-- [ ] Check if master source already exists instead of deleting and cloning every time
+- [x] Check if master source already exists instead of deleting and cloning every time
