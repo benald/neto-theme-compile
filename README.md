@@ -1,14 +1,13 @@
 # neto-theme-compile
 
 ## Usage
-### CLI
 
 ### API
 ```javascript
-const { ThemeCompiler } = require('./compile');
+const { NetoThemeCompiler } = require('./index');
 let themeCompiler;
 
-themeCompiler = new ThemeCompiler();
+themeCompiler = new NetoThemeCompiler();
 themeCompiler.init()
     .then(() => themeCompiler.compileFull())
     .then(() => console.log('Done!'))
@@ -16,12 +15,17 @@ themeCompiler.init()
 ```
 
 ### GULP
+In your `gulpfile.js`:
 ```javascript
 var gulp = require('gulp');
 var { gulpWatchAndCompile } = require('./index');
-
 
 gulp.task('default', function() {
     return gulpWatchAndCompile();
 });
 ```
+
+### TODO
+- On full compile, don't copy excluded files
+- Rename the style.css and netothemeinfo.txt correctly
+- Check if master source already exists instead of deleting and cloning every time
