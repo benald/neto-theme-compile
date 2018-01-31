@@ -11,6 +11,10 @@
         "prepublishOnly": "npm run build",
         "lint": "tslint 'src/**/*.ts'"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matt-downs/neto-theme-compile.git"
+      },
     "author": "",
     "license": "ISC",
     "dependencies": {
