@@ -1,10 +1,10 @@
 import { INetoThemeCompilerOptions, NetoThemeCompiler } from "../index";
-import watch = require('gulp-watch');
+import watch = require("gulp-watch");
 
 // @types/gulp-watch doesn't export the IWatchStream interface, so we must redefint it here :(
 export interface IWatchStream extends NodeJS.ReadWriteStream {
-    add(path: string | Array < string > ): NodeJS.ReadWriteStream;
-    unwatch(path: string | Array < string > ): NodeJS.ReadWriteStream;
+    add(path: string | string[] ): NodeJS.ReadWriteStream;
+    unwatch(path: string | string[] ): NodeJS.ReadWriteStream;
     close(): NodeJS.ReadWriteStream;
 }
 
