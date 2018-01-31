@@ -65,7 +65,7 @@ export class NetoThemeCompiler {
                     this.log(`Using existing master source:`, masterPath);
                 } else {
                     this.log(
-                        `Cloning master source from ${this.options.masterRepo.magenta.underline} into:`,
+                        `Cloning master source from ${colors.magenta.underline(this.options.masterRepo)} into:`,
                         masterPath,
                     );
                     // Empty the master source dir and clone the master repo
@@ -191,7 +191,7 @@ export class NetoThemeCompiler {
         if (pathString !== "" && !this.options.logFullPath) {
             pathString = path.relative(this.options.paths.basePath, pathString);
         }
-        console.log(`[${"neto-theme-compile".cyan}] ${message} ${pathString.magenta}`);
+        console.log(`[${colors.cyan("neto-theme-compile")}] ${message} ${colors.magenta(pathString)}`);
     }
 
 }
