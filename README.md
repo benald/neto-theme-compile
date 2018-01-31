@@ -8,8 +8,8 @@
 ### Gulp
 In your `gulpfile.js`, simply import and call the `gulpWatchAndCompile()` method like so:
 ```javascript
-var gulp = require('gulp');
-var { gulpWatchAndCompile } = require('./index');
+const gulp = require('gulp');
+const { gulpWatchAndCompile } = require('neto-theme-compile');
 
 gulp.task('default', function() {
     return gulpWatchAndCompile();
@@ -19,7 +19,7 @@ gulp.task('default', function() {
 ### API
 You can also use the library programmatically, as seen below:
 ```javascript
-const { NetoThemeCompiler } = require('./index');
+const { NetoThemeCompiler } = require('neto-theme-compile');
 let themeCompiler;
 
 themeCompiler = new NetoThemeCompiler();
@@ -31,3 +31,4 @@ themeCompiler.init()
 
 ### TODO
 - [ ] Rename the style.css and netothemeinfo.txt correctly
+- [ ] Handle case when git is not installed
