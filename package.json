@@ -2,7 +2,8 @@
     "name": "neto-theme-compile",
     "version": "0.0.1",
     "description": "Merge your Neto theme files with the latest copy of Skeletal",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "tslint 'lib/**/*.ts'"
